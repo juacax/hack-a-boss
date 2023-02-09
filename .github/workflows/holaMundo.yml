@@ -9,4 +9,5 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Damos un mensaje
-        run: echo "Hola Mundo de Hack a Boss"
+        run: echo "Hola Mundo de Hack a Boss"+
+      - run: echo "Chau Mundo"
