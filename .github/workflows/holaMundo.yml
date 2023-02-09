@@ -8,5 +8,7 @@ jobs:
   hola_mundo:
     runs-on: ubuntu-18.04
     steps:
+      - name: Instalar Dependencias
+        run: npm ci
       - name: Correr NPM
         run: npm test
