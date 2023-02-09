@@ -1,0 +1,12 @@
+name: Hola Mundo
+
+on:
+  push:
+    branches: ["master"]
+
+jobs:
+  hola_mundo:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Damos un mensaje
+        run: echo "Hola Mundo de Hack a Boss"
