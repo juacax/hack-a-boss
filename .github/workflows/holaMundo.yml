@@ -9,9 +9,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Cancelar Workflows Previos
-        uses: styfle/cancel-workflow-action@0.11.0
-        with:
-          access_token: ${{ github.token }}
+        uses: technote-space/auto-cancel-redundant-workflow@v1
       - name: Checkout
         uses: actions/checkout@v3.3.0
       - name: Setup Node.js environment
